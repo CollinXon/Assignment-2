@@ -1,0 +1,201 @@
+
+#container {
+  width: 850px;
+
+  height: 500px;
+
+  margin: 80px auto;
+  display: flex;
+
+  background-color: whitesmoke;
+
+  border: 4px solid;
+  border-radius: 4px;
+  border-style: none;
+}
+
+@media (max-width: 560px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    width: 350px;
+    margin-top: -120px;
+  }
+  #first-row,
+  #second-row,
+  #third-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  article {
+    visibility: hidden;
+  }
+}
+
+#box1 {
+  height: 130px;
+  width: 297px;
+
+  margin-top: 130px;
+  margin-left: 70px;
+}
+
+div img {
+  width: 40px;
+}
+
+#info {
+  visibility: hidden;
+  font-size: 12px;
+  color: gray;
+}
+
+@media (max-width: 560px) {
+  #info {
+    visibility: visible;
+    margin-top: -40px;
+  }
+}
+
+#box2 {
+  height: 410px;
+  width: 350px;
+  margin-top: 40px;
+  margin-left: 60px;
+
+  border-radius: 6px;
+
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+
+@media (max-width: 560px) {
+  #box2 {
+    width: 230px;
+    height: 520px;
+    margin-top: 10px;
+  }
+}
+
+#first-row,
+#second-row,
+#third-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+#second-row input {
+  width: 150px;
+  height: 30px;
+}
+
+@media (max-width: 560px) {
+  #second-row input {
+    width: 205px;
+  }
+}
+
+#second-row select {
+  width: 150px;
+  height: 30px;
+}
+
+@media (max-width: 560px) {
+  #second-row select {
+    width: 205px;
+  }
+}
+
+input,
+select {
+  height: 25px;
+  border: 1px;
+  border-radius: 2px;
+
+  color: gray;
+  font-size: 10px;
+  width: 148px;
+}
+
+@media (max-width: 560px) {
+  input,
+  select {
+    width: 200px;
+  }
+}
+
+#fourth-row,
+#fifth-row,
+#sixth-row,
+#footer {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  button {
+    width: 80px;
+  }
+}
+
+#fourth-row select {
+  width: 310px;
+  height: 32px;
+}
+
+@media (max-width: 560px) {
+  #fourth-row select {
+    width: 205px;
+  }
+}
+
+#fifth-row {
+  position: relative;
+}
+
+#fifth-row input {
+  width: 310px;
+}
+
+@media (max-width: 560px) {
+  #fifth-row input {
+    width: 205px;
+  }
+}
+
+#fifth-row img {
+  position: absolute;
+  width: 11px;
+
+  right: 22px;
+  top: 20px;
+}
+
+button {
+  width: 320px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background-color: #2ec4b6;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+@media (max-width: 560px) {
+  button {
+    width: 200px;
+  }
+}
